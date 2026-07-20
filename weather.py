@@ -1,1 +1,1 @@
-print("Weather Test")
+print("Please enter the country you would like to know the weather of")
