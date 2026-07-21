@@ -1,2 +1,16 @@
-print("Please enter the country you would like to know the weather of")
 import sys
+import requests 
+from PyQt5.QtWidgets import (QApplication, QWidget, QLabel, 
+                             QLineEdit, QPushButton, QBoxLayout)
+from PyQt5 import Qt 
+
+class WeatherApp(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.city_label = QLabel("Enter City Name: ", self)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    weather_app = WeatherApp()
+    weather_app.show()
+    sys.exit(app.exec_())
